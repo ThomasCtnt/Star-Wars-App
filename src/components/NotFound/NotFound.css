@@ -1,0 +1,33 @@
+.error-page__overlay {
+    z-index: 50;
+    background: url('./rain.gif');
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.error-page__illustration {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: auto;
+    max-height: 85%;
+}
+
+.error-page__message {
+    z-index: 80;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.error-page__message h3 {
+    font-size: 5em;
+}
+
+.error-page__link {
+    color: #000;
+}
