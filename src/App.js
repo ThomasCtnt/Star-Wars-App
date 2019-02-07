@@ -3,8 +3,10 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import NotFound from './components/NotFound/NotFound';
 import Home from './components/Home/Home';
+import People from './components/People/People';
+import Vehicles from './components/Vehicles/Vehicles';
 
-import logo from './marvel-logo.svg';
+import logo from './starwars.png';
 import './App.css';
 
 class App extends Component {
@@ -12,14 +14,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="header">
-          <img src={logo} width="130" height="52" alt="Logo Marvel" />
+          <img src={logo} width="150" height="90" alt="Logo Star Wars" />
           <Navigation />
         </header>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/comics" />
-          <Route path="/events" />
-          <Route path="/fan-zone" />
+          <Route path="/people" component={People} />
+          <Route path="/vehicles" component={Vehicles} />
 
           <Route path="/NotFound" component={NotFound} />
           <Redirect to="/NotFound" />

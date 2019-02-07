@@ -15,7 +15,7 @@
 }
 
 .header-nav__item:hover {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #ffe300;
 }
 
 .header-nav__link {

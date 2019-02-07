@@ -6,16 +6,16 @@
 
 html,
 body {
-    background: #fff;
+    background: #22262a;
     font-size: 16px;
 }
 
 .header {
     z-index: 100;
     display: flex;
-    position: fixed;
+    margin-bottom: 20px;
     width: 100%;
-    height: 52px;
+    height: 90px;
     background: #22262a;
     box-shadow: 0 1px 10px #000;
 }

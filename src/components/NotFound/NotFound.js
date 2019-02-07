@@ -8,7 +8,7 @@ class NotFound extends React.Component {
     render() {
         return(
             <div className="error-page">
-                <div class="error-page__message">
+                <div className="error-page__message">
                     <h3>404</h3>
                     <p>Cette page n'existe pas, <Link className="error-page__link" to="/">retourner à l'accueil</Link></p>
                 </div>
