@@ -1,4 +1,4 @@
-.peoples {
+.list {
     display: flex;
     list-style: none;
     padding: 0 20px;
@@ -7,19 +7,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.people {
+.item {
     width: calc(33% - 30px);
     margin: 0 15px;
     padding: 15px 0;
 }
 
-.people-name {
+.item-name {
     font-weight: 600;
     color: #ffe300;
     margin-bottom: 5px;
 }
 
-.people-link {
+.item-link {
     text-decoration: none;
     color: #fff;
 }
