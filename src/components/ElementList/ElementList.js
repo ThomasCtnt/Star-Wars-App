@@ -8,7 +8,6 @@ class ElementList extends React.Component {
     state = { elements: [] };
 
     componentDidMount() {
-
         axios.get(`https://swapi.co/api${this.props.location.pathname}/`)
             .then(response => {
                 this.setState({ elements: response.data.results });
@@ -32,11 +31,12 @@ class ElementList extends React.Component {
                     this.state.elements.map(function(element, i) {
                         let url = element.url;
                         let id = url.match(/https:\/\/swapi\.co\/api\/[a-z]*\/([0-9]*)\//)[1];
+                        let category = url.match(/https:\/\/swapi\.co\/api\/([a-z]*)\/[0-9]*\//)[1];
 
                         return (                            
                             <li className="item" key={i}>
                                 <p className="item-name">{element.name}</p>
-                                <Link className="item-link" to={`/details/${id}`}>Fiche détaillée</Link>
+                                <Link className="item-link" to={`/${category}/${id}`}>Fiche détaillée</Link>
                             </li>
                         );
                     })
