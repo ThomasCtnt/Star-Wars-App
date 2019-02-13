@@ -8,13 +8,13 @@ class Navigation extends React.Component {
         return(
             <ul className="header-nav">
                 <li className="header-nav__item">
-                    <Link className="header-nav__link" to="/">Accueil</Link>
+                    <Link className="header-nav__link" to="/">Home</Link>
                 </li>
                 <li className="header-nav__item">
-                    <Link className="header-nav__link" to="/people">Les personnages</Link>
+                    <Link className="header-nav__link" to="/people">Characters</Link>
                 </li>
                 <li className="header-nav__item">
-                    <Link className="header-nav__link" to="/vehicles">Les véhicules</Link>
+                    <Link className="header-nav__link" to="/vehicles">Vehicles</Link>
                 </li>
             </ul>
         );

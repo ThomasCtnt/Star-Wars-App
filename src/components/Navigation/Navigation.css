@@ -1,3 +1,7 @@
+.header {
+    z-index: 999;
+}
+
 .header-nav {
     list-style: none;
 }

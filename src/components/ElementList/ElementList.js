@@ -36,7 +36,7 @@ class ElementList extends React.Component {
                         return (                            
                             <li className="item" key={i}>
                                 <p className="item-name">{element.name}</p>
-                                <Link className="item-link" to={`/${category}/${id}`}>Fiche détaillée</Link>
+                                <Link className="item-link" to={`/${category}/${id}`}>See details</Link>
                             </li>
                         );
                     })
