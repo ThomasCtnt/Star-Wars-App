@@ -1,0 +1,8 @@
+.chardetails-prop {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.chardetails-prop:not(:last-child) {
+    margin-bottom: 10px;
+}

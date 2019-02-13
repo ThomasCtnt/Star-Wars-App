@@ -1,0 +1,8 @@
+.vehicledetails-prop {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.vehicledetails-prop:not(:last-child) {
+    margin-bottom: 10px;
+}
