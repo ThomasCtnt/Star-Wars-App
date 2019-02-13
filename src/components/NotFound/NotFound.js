@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import './NotFound.css';
-import notFoundCharacter from './iron-man-char.jpg';
+import notFoundCharacter from './dark404.gif';
 
 class NotFound extends React.Component {
     render() {
@@ -10,11 +10,11 @@ class NotFound extends React.Component {
             <div className="error-page">
                 <div className="error-page__message">
                     <h3>404</h3>
-                    <p>Cette page n'existe pas, <Link className="error-page__link" to="/">retourner à l'accueil</Link></p>
+                    <p>You're lost young padawan... <Link className="error-page__link" to="/">Get out of the darkside</Link></p>
                 </div>
 
                 <div className="error-page__overlay"></div>
-                <img className="error-page__illustration" src={notFoundCharacter} alt="Iron man" />
+                <img className="error-page__illustration" src={notFoundCharacter} alt="Dark Vador" />
             </div>
         );
     }

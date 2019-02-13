@@ -10,10 +10,9 @@
 
 .error-page__illustration {
     position: absolute;
-    bottom: 0;
-    right: 5%;
-    width: auto;
-    max-height: 85%;
+    top: 50%;
+    right: 5em;
+    transform: translateY(-50%);
 }
 
 .error-page__message {
@@ -22,6 +21,7 @@
     top: 30%;
     left: 10%;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffe300;
 }
 
 .error-page__message h3 {
@@ -29,5 +29,5 @@
 }
 
 .error-page__link {
-    color: #000;
+    color: #ffe300;
 }
